@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <h3>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit</h3>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-    
+<body>
 
+  <h3>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit</h3>
 
-    <script src="11 - temperature.js" charset="utf-8"></script>
-  </body>
+  <table border="0" style="text-align: left;">
+    <tr>
+      <th>Celsius: </th>
+      <td><input type="text" id="celsius" placeholder="Celius"></td>
+    </tr>
+    <tr>
+      <th>Fahrenheit: </th>
+      <td><input type="text" id="fahrenheit" placeholder="Fahrenheit"></td>
+    </tr>
+  </table>
+  <div id="msg"></div>
+  <p>
+    <button type="button" onclick="celsius()" id="celcius">Celcius</button>
+    <button type="button" onclick="fahrenheit()" id="fahrenheit">Fahrenheit</button>
+  </p>
+
+  <script src="11 - temperature.js" charset="utf-8"></script>
+</body>
+
 </html>
