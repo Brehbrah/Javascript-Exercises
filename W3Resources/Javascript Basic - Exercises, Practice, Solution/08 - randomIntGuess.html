@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form>
+      <table border ="0">
+        <tr>
+          <h1>Guess the number</h1>
+          <th>Number</th>
+          <td><input type="text" id="int" placeholder="Enter a number"></td>
+        </tr>
+      </table>
+      <div id="msg"></div>
+      <p>
+        <button type="button" id="submit" onclick="checkRandom()" name="submit">Submit</button>
+      </p>
+    </form>
+
+    <script>
+
+      function checkRandom() {
+
+          var random = Math.ceil(Math.random() * 10);
+          var msg = "";
+
+          var input = document.getElementById('int').value;
+
+
+          if (0 < input || input >= 10) {
+            if(input == random) {
+              msg += document.getElementById('msg').innerHTML = "<p>Good Work</p>";
+            } else {
+              msg += document.getElementById('msg').innerHTML = "<p>Not Matched! <br>The random number is " + random + "</p>";
+            }
+          }
+      }
+    </script>
+  </body>
+</html>

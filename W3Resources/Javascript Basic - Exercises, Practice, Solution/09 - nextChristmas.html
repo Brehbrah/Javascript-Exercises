@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <script defer>
+    var today = new Date();
+    var nextXmas = new Date(today.getFullYear(), 11, 24);
+    var oneDay = 24 * 60 * 60 * 1000;
+    var diffDays = Math.ceil(Math.abs((today.getTime() - nextXmas.getTime()) / (oneDay)));
+    alert("There are " + diffDays + " days unntil Christmas.");
+  </script>
+</head>
+
+<body>
+
+  <h1>Calculate for the next Christmas</h1>
+
+  <div id="msg">
+
+  </div>
+
+
+
+
+</body>
+
+</html>
