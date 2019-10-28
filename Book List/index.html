@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-      integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
-      crossorigin="anonymous"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Booklist</title>
     <style>
         .success, .error {
             color: white;
             padding: 5px;
-            margin: 5px 0 15px 0;
+            margin: 5p 0  15px 0;
         }
+
         .success {
             background: green;
         }
@@ -24,43 +22,43 @@
             background: red;
         }
     </style>
-    <title>Book List</title>
-  </head>
-  <body>
+</head>
+<body>
+
     <div class="container">
-      <h1>Add Book</h1>
-      <form id="book-form">
-        <div>
-          <label for="title">Title</label>
-          <!-- u-full-width is a skeleton class to make a block level input that will go all the way across-->
-          <input type="text" id="title" class="u-full-width" />
-        </div>
-        <div>
-          <label for="author">Author</label>
-          <input type="text" id="author" class="u-full-width" />
-        </div>
-        <div>
-          <label for="isbn">ISBN#</label>
-          <input type="text" id="isbn" class="u-full-width" />
-        </div>
-        <div>
-            <input type="submit" value="submit" class="u-full-width">
-        </div>
-      </form>
-      <!-- u-full-width will stretch the whole screen -->
-      <table class="u-full-width">
-        <!-- thead is table head tag -->
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th></th> <!-- it's empty, because we want it to be delete link -->
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody><!-- This is going to be dynamically insert our rows -->
-      </table>
+        <h1>Add Book</h1>
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+        </form>
+        <hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+                <tbody id="book-list"></tbody>
+            </thead>
+        </table>
     </div>
-    <script src="appES6.js"></script>
-  </body>
+
+    <script src="ES6.js"></script>    
+</body>
 </html>
